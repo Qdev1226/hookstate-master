@@ -1,0 +1,37 @@
+{
+    "name": "@hookstate/workspace",
+    "version": "4.0.0",
+    "description": "The workspace for @hookstate.",
+    "license": "MIT",
+    "author": {
+        "name": "Andrey Konstantinov"
+    },
+    "repository": {
+        "url": "https://github.com/avkonst/hookstate"
+    },
+    "bugs": {
+        "url": "https://github.com/avkonst/hookstate/issues"
+    },
+    "homepage": "https://github.com/avkonst/hookstate",
+    "engines": {
+        "node": ">=16",
+        "pnpm": ">=7.18.2"
+    },
+    "scripts": {
+        "build": "nx run-many --target=build --all",
+        "test": "nx run-many --target=test --all",
+        "test:ci": "nx run-many --target=test:ci --all",
+        "update:deps": "nx run-many --target=update:deps --all",
+        "clean": "nx run-many --target=clean --all",
+        "release": "nx run-many --target=release --all",
+        "nx:w": "nodemon node_modules/@nrwl/cli/bin/nx.js"
+    },
+    "devDependencies": {
+        "@nrwl/cli": "15.3.3",
+        "@nrwl/workspace": "15.3.3",
+        "jest": "28.1.2",
+        "nodemon": "^2.0.16",
+        "nx": "15.3.3",
+        "typescript": "4.6.2"
+    }
+}

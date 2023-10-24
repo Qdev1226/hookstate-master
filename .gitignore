@@ -1,0 +1,17 @@
+**/node_modules
+**/node_modules.bak
+**/coverage
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.DS_Store
+
+**/.idea
+**/.netlify
+**/.firebase
+
+**/build
+**/dist
+.pnpm-debug.log
